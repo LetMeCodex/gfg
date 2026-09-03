@@ -28,9 +28,26 @@ class GFGClient:
 
     def __init__(self, cookie: str = ""):
         raw_cookie = cookie or config.gfg_cookie
-        self.cookie = raw_cookie.strip().strip('"').strip("'") if raw_cookie else ""
+        self.cookie = self._sanitize_cookie_string(raw_cookie)
         self.http = requests.Session()
         self._setup_headers()
+
+    @staticmethod
+    def _sanitize_cookie_string(raw: str) -> str:
+        if not raw:
+            return ""
+        # Remove any leading 'Cookie:' or 'cookie:' prefix
+        clean = raw.strip().strip('"').strip("'")
+        if clean.lower().startswith("cookie:"):
+            clean = clean[7:].strip()
+
+        # Replace all newlines, tabs, and carriage returns
+        clean = re.sub(r"[\r\n\t]+", " ", clean).strip()
+        # Clean around semicolons
+        clean = re.sub(r"\s*;\s*", "; ", clean)
+        # Keep only valid ASCII printable characters (space 32 to ~ 126)
+        clean = "".join(c for c in clean if 31 < ord(c) < 127).strip()
+        return clean
 
     def _setup_headers(self):
         headers = {
@@ -50,7 +67,10 @@ class GFGClient:
                 headers["Cookie"] = self.cookie
                 csrf_match = re.search(r"csrftoken=([^;]+)", self.cookie)
                 if csrf_match:
-                    headers["X-CSRFToken"] = csrf_match.group(1).strip()
+                    csrf_val = csrf_match.group(1).strip()
+                    csrf_clean = "".join(c for c in csrf_val if 31 < ord(c) < 127).strip()
+                    if csrf_clean:
+                        headers["X-CSRFToken"] = csrf_clean
             else:
                 headers["Cookie"] = f"sessionid={self.cookie}"
 

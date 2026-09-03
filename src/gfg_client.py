@@ -1,6 +1,7 @@
 import html
 import json
 import logging
+import random
 import re
 import time
 from typing import Any, Dict, List, Optional
@@ -15,6 +16,11 @@ class GFGClient:
     API_BASE = "https://practiceapi.geeksforgeeks.org/api/vr"
     ORIGIN_API = "https://practiceapiorigin.geeksforgeeks.org/api/latest"
     SITE_BASE = "https://www.geeksforgeeks.org"
+
+    PRACTICE_TOPICS = [
+        "array", "string", "tree", "list", "stack", "queue",
+        "matrix", "hash", "sort", "graph", "sum", "count", "max", "find"
+    ]
 
     # Language short codes for GFG
     LANG_MAP = {
@@ -106,6 +112,22 @@ class GFGClient:
         # Clean problem description
         results["cleanContent"] = self._clean_html(results.get("problem_question", ""))
         return results
+
+    def fetch_practice_problems(self, topic: str = "", limit: int = 50) -> List[Dict[str, Any]]:
+        """Fetch real practice problems from GeeksforGeeks search API."""
+        topics_to_try = [topic] if topic else random.sample(self.PRACTICE_TOPICS, min(3, len(self.PRACTICE_TOPICS)))
+        for t in topics_to_try:
+            url = f"https://practiceapi.geeksforgeeks.org/api/v1/problems/search/?query={t}&limit={limit}"
+            try:
+                resp = self.http.get(url, timeout=15)
+                if resp.status_code == 200:
+                    data = resp.json()
+                    problems = data.get("problems", [])
+                    if problems:
+                        return problems
+            except Exception as e:
+                logger.warning(f"Failed to fetch GFG practice problems for topic '{t}': {e}")
+        return []
 
     def submit_solution(self, slug: str, code: str, language: str = "cpp") -> str:
         """Submit code to GFG judge and return submission_id."""

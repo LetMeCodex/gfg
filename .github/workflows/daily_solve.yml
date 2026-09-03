@@ -1,9 +1,12 @@
-name: GeeksforGeeks POTD Daily Solver
+name: GeeksforGeeks POTD & Practice Grinder
 
 on:
   schedule:
-    # Runs daily at 00:15 UTC (05:45 AM IST)
-    - cron: '15 0 * * *'
+    # 4 Irregular, human-paced slots across the day (IST = UTC + 5:30)
+    - cron: '27 0 * * *'  # ~05:57 AM IST (Morning POTD & Streak Keeper)
+    - cron: '48 7 * * *'  # ~01:18 PM IST (Afternoon Lunch Practice Grinding)
+    - cron: '19 14 * * *' # ~07:49 PM IST (Evening Commute Practice Grinding)
+    - cron: '52 17 * * *' # ~11:22 PM IST (Late Night Practice Grinding)
   workflow_dispatch: # Allows manual one-click trigger from GitHub Actions
 
 permissions:
@@ -30,20 +33,25 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run GFG POTD Autonomous Solver
+      - name: Run GFG POTD & Practice Grinder
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GFG_COOKIE: ${{ secrets.GFG_COOKIE }}
           LANGUAGE: "cpp"
-          MAX_RETRIES: "3"
+          MAX_RETRIES: "4"
+          ENABLE_PRACTICE_GRIND: "true"
+          DAILY_TARGET_MIN: "6"
+          DAILY_TARGET_MAX: "14"
+          MIN_PROBLEMS_PER_RUN: "2"
+          MAX_PROBLEMS_PER_RUN: "4"
         run: |
           python -m src.runner
 
-      - name: Commit & Push POTD Solution
+      - name: Commit & Push POTD and Practice Solutions
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
-          commit_message: "Auto: Solved GeeksforGeeks Problem of the Day [skip ci]"
+          commit_message: "Auto: Solve GFG Problems & Update Practice History [skip ci]"
           file_pattern: "."
-          commit_user_name: "GFG POTD Bot"
+          commit_user_name: "GFG Bot"
           commit_user_email: "actions@github.com"
-          commit_author: "GFG POTD Bot <actions@github.com>"
+          commit_author: "GFG Bot <actions@github.com>"

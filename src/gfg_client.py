@@ -46,7 +46,13 @@ class GFGClient:
             "Connection": "keep-alive",
         }
         if self.cookie:
-            headers["Cookie"] = self.cookie
+            if "=" in self.cookie:
+                headers["Cookie"] = self.cookie
+                csrf_match = re.search(r"csrftoken=([^;]+)", self.cookie)
+                if csrf_match:
+                    headers["X-CSRFToken"] = csrf_match.group(1).strip()
+            else:
+                headers["Cookie"] = f"sessionid={self.cookie}"
 
         self.http.headers.update(headers)
 

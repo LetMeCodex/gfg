@@ -112,7 +112,7 @@ Input Format Specification:
 {lang_instructions}
 
 Critical Requirements:
-1. Deduce the exact function signature and method name from the problem statement, examples, and input format.
+1. Deduce the exact function signature and method name from the problem statement, examples, and input format (e.g. for 'Bird and Max Fruit Gathering' it is `maxFruits`).
 2. Return ONLY the complete, compileable `class Solution` code inside a ```{language} ... ``` code block. No conversational prose.
 """
         raw = self._generate_with_resilience(prompt)
@@ -155,7 +155,7 @@ DEBUGGING INSTRUCTIONS:
 3. If TIME LIMIT EXCEEDED (TLE):
    - Switch to an $O(N)$ or $O(N \\log N)$ optimal technique (e.g., sliding window, prefix sums, two pointers).
 4. CRITICAL FORMAT ENFORCEMENT:
-   - You MUST return the ENTIRE, COMPLETE `class Solution { public: ... };` code block.
+   - You MUST return the ENTIRE, COMPLETE `class Solution {{ public: ... }};` code block.
    - NEVER return just an isolated if-statement or partial code snippet.
    - Return ONLY the compileable code inside a ```{language} ... ``` block.
 """

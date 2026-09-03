@@ -1,6 +1,17 @@
 {
-  "total_solved": 0,
-  "current_streak": 0,
-  "solved_dates": [],
-  "history": []
+  "total_solved": 1,
+  "current_streak": 1,
+  "solved_dates": [
+    "2026-09-04"
+  ],
+  "history": [
+    {
+      "date": "2026-09-04",
+      "problem_name": "Bird and Max Fruit Gathering",
+      "slug": "bird-and-maximum-fruit-gathering--170645",
+      "difficulty": "Easy",
+      "attempts": 2,
+      "time": "2026-09-03 21:56:35"
+    }
+  ]
 }

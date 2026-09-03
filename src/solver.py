@@ -147,13 +147,17 @@ GEEKSFORGEEKS JUDGE DIAGNOSTIC:
 --------------------------------------------------
 
 DEBUGGING INSTRUCTIONS:
-1. If WRONG ANSWER (WA):
+1. If COMPILATION ERROR:
+   - Check the exact class method name and parameter types. If the compiler error says:
+     `'class Solution' has no member named 'XYZ'`, you MUST rename your function to EXACTLY `XYZ`.
+2. If WRONG ANSWER (WA):
    - Check if you missed circular array wrapping (e.g. `(i + j) % n`), edge cases (m >= n, m = 1, single element), or 64-bit integer overflow (use `long long` in C++).
-2. If COMPILATION ERROR:
-   - Check the exact class method name and parameter types. Ensure proper semicolons and namespaces.
 3. If TIME LIMIT EXCEEDED (TLE):
    - Switch to an $O(N)$ or $O(N \\log N)$ optimal technique (e.g., sliding window, prefix sums, two pointers).
-4. Return ONLY the complete corrected `class Solution` code inside a ```{language} ... ``` block.
+4. CRITICAL FORMAT ENFORCEMENT:
+   - You MUST return the ENTIRE, COMPLETE `class Solution { public: ... };` code block.
+   - NEVER return just an isolated if-statement or partial code snippet.
+   - Return ONLY the compileable code inside a ```{language} ... ``` block.
 """
         raw = self._generate_with_resilience(prompt)
         return self.extract_clean_code(raw)

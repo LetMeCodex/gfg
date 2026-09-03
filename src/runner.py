@@ -114,6 +114,7 @@ def run():
         logger.error(f"Failed to fetch problem details: {e}")
         sys.exit(1)
 
+    pid = details.get("id") or potd_meta.get("problem_id") or 0
     folder_name = f"{potd_date}_{slug}"
     attempt = 1
     previous_code = ""
@@ -150,7 +151,7 @@ def run():
             submission_id = client.submit_solution(slug, sol_code, config.language)
             logger.info(f"Submitted successfully! Submission ID: {submission_id}. Polling verdict...")
 
-            verdict = client.poll_verdict(submission_id)
+            verdict = client.poll_verdict(submission_id, pid=pid)
             logger.info(f"Verdict: {verdict.get('view_mode')} (Passed: {verdict.get('passed')})")
 
             if verdict["passed"]:
@@ -180,13 +181,14 @@ def run():
                 diagnostic = verdict.get("diagnostic", "Submission failed.")
                 previous_code = sol_code
                 if attempt < config.max_retries:
-                    time.sleep(8)
+                    logger.info("Backing off 12s before next self-healing attempt...")
+                    time.sleep(12)
 
         except Exception as loop_err:
             logger.error(f"Error during attempt {attempt}: {loop_err}")
             diagnostic = f"Execution error: {str(loop_err)}"
             previous_code = sol_code if 'sol_code' in locals() else ""
-            time.sleep(8)
+            time.sleep(12)
 
         attempt += 1
 

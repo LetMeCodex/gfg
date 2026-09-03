@@ -140,14 +140,15 @@ class GFGClient:
 
         return submission_id
 
-    def poll_verdict(self, submission_id: str, max_wait_seconds: int = 45) -> Dict[str, Any]:
+    def poll_verdict(self, submission_id: str, pid: int, max_wait_seconds: int = 45) -> Dict[str, Any]:
         """Poll GFG evaluation status until grading completes."""
         url = f"{self.ORIGIN_API}/problems/submission/submit/result/"
         start_time = time.time()
 
         payload = {
-            "subId": submission_id,
-            "reqType": "solutionCheck",
+            "sub_id": submission_id,
+            "sub_type": "submit",
+            "pid": int(pid),
         }
 
         headers = {
@@ -155,18 +156,19 @@ class GFGClient:
             "Referer": f"{self.SITE_BASE}/",
             "Origin": self.SITE_BASE,
         }
+        if self.cookie:
+            headers["Cookie"] = self.cookie
 
         while time.time() - start_time < max_wait_seconds:
             response = self.http.post(url, json=payload, headers=headers, timeout=15)
             if response.status_code == 200:
                 data = response.json()
-                results = data.get("results", {}) or data.get("response", {})
-                status = results.get("status")
-                view_mode = results.get("view_mode")
+                status = data.get("status")
+                view_mode = data.get("view_mode")
 
-                # If status is SUCCESS or calculated, grading has finished
-                if status in ("SUCCESS", "calculated") or (view_mode and view_mode != "queuing"):
-                    return self.parse_verdict(results)
+                # If status is SUCCESS or view_mode is final, evaluation has completed
+                if status == "SUCCESS" or (view_mode and view_mode != "queuing"):
+                    return self.parse_verdict(data)
 
             time.sleep(2.5)
 
@@ -177,22 +179,23 @@ class GFGClient:
         view_mode = raw_result.get("view_mode", "unknown")
         passed = (view_mode == "correct")
 
-        time_taken = raw_result.get("time_taken", "N/A")
-        memory_taken = raw_result.get("memory_taken", "N/A")
+        time_taken = raw_result.get("time", "N/A")
+        msg = raw_result.get("message", {})
+        err = msg.get("error", "") if isinstance(msg, dict) else str(msg)
 
         diagnostic = ""
         if not passed:
-            if view_mode == "wrong":
+            if "compil" in view_mode.lower() or err:
+                diagnostic = f"Compilation Error:\n{err}"
+            elif view_mode == "wrong":
                 diagnostic = (
                     f"Verdict: WRONG ANSWER (WA)\n"
-                    f"Input: {raw_result.get('input', 'N/A')}\n"
-                    f"Your Output: {raw_result.get('user_output', 'N/A')}\n"
-                    f"Expected Output: {raw_result.get('expected_output', 'N/A')}"
+                    f"Input: {msg.get('input', 'N/A') if isinstance(msg, dict) else 'N/A'}\n"
+                    f"Your Output: {msg.get('user_output', 'N/A') if isinstance(msg, dict) else 'N/A'}\n"
+                    f"Expected Output: {msg.get('expected_output', 'N/A') if isinstance(msg, dict) else 'N/A'}"
                 )
             elif view_mode == "time":
                 diagnostic = f"Verdict: TIME LIMIT EXCEEDED (TLE)\nTime taken: {time_taken}s"
-            elif view_mode == "compilation_error":
-                diagnostic = f"Verdict: COMPILATION ERROR\nError Log:\n{raw_result.get('compilation_error', '')}"
             else:
                 diagnostic = f"Verdict: {view_mode}\nDetails: {json.dumps(raw_result, indent=2)}"
 
@@ -200,7 +203,6 @@ class GFGClient:
             "passed": passed,
             "view_mode": view_mode,
             "time": time_taken,
-            "memory": memory_taken,
             "diagnostic": diagnostic,
             "raw": raw_result,
         }

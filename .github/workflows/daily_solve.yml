@@ -1,0 +1,49 @@
+name: GeeksforGeeks POTD Daily Solver
+
+on:
+  schedule:
+    # Runs daily at 00:15 UTC (05:45 AM IST)
+    - cron: '15 0 * * *'
+  workflow_dispatch: # Allows manual one-click trigger from GitHub Actions
+
+permissions:
+  contents: write
+
+jobs:
+  solve-and-commit:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run GFG POTD Autonomous Solver
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GFG_COOKIE: ${{ secrets.GFG_COOKIE }}
+          LANGUAGE: "cpp"
+          MAX_RETRIES: "3"
+        run: |
+          python -m src.runner
+
+      - name: Commit & Push POTD Solution
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Auto: Solved GeeksforGeeks Problem of the Day [skip ci]"
+          file_pattern: "."
+          commit_user_name: "GFG POTD Bot"
+          commit_user_email: "actions@github.com"
+          commit_author: "GFG POTD Bot <actions@github.com>"

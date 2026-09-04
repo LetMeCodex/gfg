@@ -1,8 +1,9 @@
 {
-  "total_solved": 1,
-  "current_streak": 1,
+  "total_solved": 2,
+  "current_streak": 2,
   "solved_dates": [
-    "2026-09-04"
+    "2026-09-04",
+    "2026-09-05"
   ],
   "history": [
     {
@@ -12,6 +13,13 @@
       "difficulty": "Easy",
       "attempts": 2,
       "time": "2026-09-03 21:56:35"
+    },
+    {
+      "date": "2026-09-05",
+      "problem_name": "Longest Subsequence with Adjacent Diff as 1",
+      "slug": "longest-sub-sequence-such-that-difference-between-adjacents-is-one2558",
+      "difficulty": "Medium",
+      "time": "2026-09-04 19:55:53"
     }
   ]
 }

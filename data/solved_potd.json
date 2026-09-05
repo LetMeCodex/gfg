@@ -1,9 +1,10 @@
 {
-  "total_solved": 2,
-  "current_streak": 2,
+  "total_solved": 3,
+  "current_streak": 3,
   "solved_dates": [
     "2026-09-04",
-    "2026-09-05"
+    "2026-09-05",
+    "2026-09-06"
   ],
   "history": [
     {
@@ -20,6 +21,13 @@
       "slug": "longest-sub-sequence-such-that-difference-between-adjacents-is-one2558",
       "difficulty": "Medium",
       "time": "2026-09-04 19:55:53"
+    },
+    {
+      "date": "2026-09-06",
+      "problem_name": "Sum of Pairwise ANDs",
+      "slug": "sum-of-products5049",
+      "difficulty": "Medium",
+      "time": "2026-09-05 19:36:37"
     }
   ]
 }

@@ -1,12 +1,13 @@
 {
-  "total_solved": 5,
-  "current_streak": 5,
+  "total_solved": 6,
+  "current_streak": 6,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
     "2026-09-06",
     "2026-09-07",
-    "2026-09-08"
+    "2026-09-08",
+    "2026-09-09"
   ],
   "history": [
     {
@@ -44,6 +45,13 @@
       "slug": "find-the-string-in-grid0111",
       "difficulty": "Medium",
       "time": "2026-09-07 18:45:54"
+    },
+    {
+      "date": "2026-09-09",
+      "problem_name": "Max Digit Sum Number in 1 to n",
+      "slug": "biggest-integer-having-maximum-digit-sum1704",
+      "difficulty": "Easy",
+      "time": "2026-09-08 20:21:52"
     }
   ]
 }

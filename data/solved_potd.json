@@ -1,6 +1,6 @@
 {
-  "total_solved": 8,
-  "current_streak": 8,
+  "total_solved": 9,
+  "current_streak": 9,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -9,7 +9,8 @@
     "2026-09-08",
     "2026-09-09",
     "2026-09-10",
-    "2026-09-11"
+    "2026-09-11",
+    "2026-09-12"
   ],
   "history": [
     {
@@ -68,6 +69,13 @@
       "slug": "k-modulus-array-element0255",
       "difficulty": "Easy",
       "time": "2026-09-10 20:05:50"
+    },
+    {
+      "date": "2026-09-12",
+      "problem_name": "Max Product Subsequence of Size K",
+      "slug": "maximum-product4633",
+      "difficulty": "Easy",
+      "time": "2026-09-11 20:04:53"
     }
   ]
 }

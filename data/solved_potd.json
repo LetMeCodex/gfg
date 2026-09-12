@@ -1,6 +1,6 @@
 {
-  "total_solved": 9,
-  "current_streak": 9,
+  "total_solved": 10,
+  "current_streak": 10,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -10,7 +10,8 @@
     "2026-09-09",
     "2026-09-10",
     "2026-09-11",
-    "2026-09-12"
+    "2026-09-12",
+    "2026-09-13"
   ],
   "history": [
     {
@@ -76,6 +77,13 @@
       "slug": "maximum-product4633",
       "difficulty": "Easy",
       "time": "2026-09-11 20:04:53"
+    },
+    {
+      "date": "2026-09-13",
+      "problem_name": "Party in Town",
+      "slug": "party-in-town3951",
+      "difficulty": "Medium",
+      "time": "2026-09-12 19:40:34"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "total_solved": 10,
-  "current_streak": 10,
+  "total_solved": 11,
+  "current_streak": 11,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -11,7 +11,8 @@
     "2026-09-10",
     "2026-09-11",
     "2026-09-12",
-    "2026-09-13"
+    "2026-09-13",
+    "2026-09-14"
   ],
   "history": [
     {
@@ -84,6 +85,13 @@
       "slug": "party-in-town3951",
       "difficulty": "Medium",
       "time": "2026-09-12 19:40:34"
+    },
+    {
+      "date": "2026-09-14",
+      "problem_name": "Shortest Safe Route in Grid",
+      "slug": "find-shortest-safe-route-in-a-matrix",
+      "difficulty": "Medium",
+      "time": "2026-09-14 05:17:49"
     }
   ]
 }

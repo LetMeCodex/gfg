@@ -1,6 +1,6 @@
 {
-  "total_solved": 12,
-  "current_streak": 12,
+  "total_solved": 13,
+  "current_streak": 13,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -13,7 +13,8 @@
     "2026-09-12",
     "2026-09-13",
     "2026-09-14",
-    "2026-09-15"
+    "2026-09-15",
+    "2026-09-16"
   ],
   "history": [
     {
@@ -100,6 +101,13 @@
       "slug": "leaf-under-budget",
       "difficulty": "Easy",
       "time": "2026-09-14 19:24:21"
+    },
+    {
+      "date": "2026-09-16",
+      "problem_name": "Dominant Pairs",
+      "slug": "dominant-pairs",
+      "difficulty": "Easy",
+      "time": "2026-09-15 20:32:51"
     }
   ]
 }

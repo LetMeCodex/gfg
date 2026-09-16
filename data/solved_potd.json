@@ -1,6 +1,6 @@
 {
-  "total_solved": 13,
-  "current_streak": 13,
+  "total_solved": 14,
+  "current_streak": 14,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -14,7 +14,8 @@
     "2026-09-13",
     "2026-09-14",
     "2026-09-15",
-    "2026-09-16"
+    "2026-09-16",
+    "2026-09-17"
   ],
   "history": [
     {
@@ -108,6 +109,13 @@
       "slug": "dominant-pairs",
       "difficulty": "Easy",
       "time": "2026-09-15 20:32:51"
+    },
+    {
+      "date": "2026-09-17",
+      "problem_name": "Min Edge Reversals for Path",
+      "slug": "minimum-edges",
+      "difficulty": "Medium",
+      "time": "2026-09-16 20:28:18"
     }
   ]
 }

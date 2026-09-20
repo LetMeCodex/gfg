@@ -1,6 +1,6 @@
 {
-  "total_solved": 16,
-  "current_streak": 16,
+  "total_solved": 17,
+  "current_streak": 17,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -17,7 +17,8 @@
     "2026-09-16",
     "2026-09-17",
     "2026-09-18",
-    "2026-09-19"
+    "2026-09-19",
+    "2026-09-20"
   ],
   "history": [
     {
@@ -132,6 +133,13 @@
       "slug": "minimum-cost-to-make-two-strings-identical1107",
       "difficulty": "Medium",
       "time": "2026-09-18 20:01:03"
+    },
+    {
+      "date": "2026-09-20",
+      "problem_name": "Largest Subsquare Surrounded by X",
+      "slug": "largest-subsquare-surrounded-by-x0558",
+      "difficulty": "Medium",
+      "time": "2026-09-20 12:40:17"
     }
   ]
 }

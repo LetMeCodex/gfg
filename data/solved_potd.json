@@ -1,6 +1,6 @@
 {
-  "total_solved": 18,
-  "current_streak": 18,
+  "total_solved": 19,
+  "current_streak": 19,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -19,7 +19,8 @@
     "2026-09-18",
     "2026-09-19",
     "2026-09-20",
-    "2026-09-21"
+    "2026-09-21",
+    "2026-09-22"
   ],
   "history": [
     {
@@ -148,6 +149,13 @@
       "slug": "check-if-all-levels-of-two-trees-are-anagrams-or-not",
       "difficulty": "Medium",
       "time": "2026-09-21 05:17:48"
+    },
+    {
+      "date": "2026-09-22",
+      "problem_name": "Longest Matching in Dictionary with Removals",
+      "slug": "find-largest-word-in-dictionary2430",
+      "difficulty": "Medium",
+      "time": "2026-09-21 21:19:57"
     }
   ]
 }

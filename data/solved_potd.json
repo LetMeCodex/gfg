@@ -1,6 +1,6 @@
 {
-  "total_solved": 17,
-  "current_streak": 17,
+  "total_solved": 18,
+  "current_streak": 18,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -18,7 +18,8 @@
     "2026-09-17",
     "2026-09-18",
     "2026-09-19",
-    "2026-09-20"
+    "2026-09-20",
+    "2026-09-21"
   ],
   "history": [
     {
@@ -140,6 +141,13 @@
       "slug": "largest-subsquare-surrounded-by-x0558",
       "difficulty": "Medium",
       "time": "2026-09-20 12:40:17"
+    },
+    {
+      "date": "2026-09-21",
+      "problem_name": "Check Level Anagrams in Binary Trees",
+      "slug": "check-if-all-levels-of-two-trees-are-anagrams-or-not",
+      "difficulty": "Medium",
+      "time": "2026-09-21 05:17:48"
     }
   ]
 }

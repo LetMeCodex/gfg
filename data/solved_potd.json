@@ -1,6 +1,6 @@
 {
-  "total_solved": 25,
-  "current_streak": 25,
+  "total_solved": 26,
+  "current_streak": 26,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -26,7 +26,8 @@
     "2026-09-25",
     "2026-09-26",
     "2026-09-27",
-    "2026-09-28"
+    "2026-09-28",
+    "2026-09-29"
   ],
   "history": [
     {
@@ -204,6 +205,13 @@
       "slug": "range-gcd-queries3654",
       "difficulty": "Medium",
       "time": "2026-09-28 05:43:04"
+    },
+    {
+      "date": "2026-09-29",
+      "problem_name": "Min Steps by Knight",
+      "slug": "steps-by-knight5927",
+      "difficulty": "Medium",
+      "time": "2026-09-28 20:35:10"
     }
   ]
 }

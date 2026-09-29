@@ -1,6 +1,6 @@
 {
-  "total_solved": 26,
-  "current_streak": 26,
+  "total_solved": 27,
+  "current_streak": 27,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -27,7 +27,8 @@
     "2026-09-26",
     "2026-09-27",
     "2026-09-28",
-    "2026-09-29"
+    "2026-09-29",
+    "2026-09-30"
   ],
   "history": [
     {
@@ -212,6 +213,13 @@
       "slug": "steps-by-knight5927",
       "difficulty": "Medium",
       "time": "2026-09-28 20:35:10"
+    },
+    {
+      "date": "2026-09-30",
+      "problem_name": "Ways to Reach Origin",
+      "slug": "paths-to-reach-origin3850",
+      "difficulty": "Medium",
+      "time": "2026-09-29 19:26:57"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "total_solved": 27,
-  "current_streak": 27,
+  "total_solved": 28,
+  "current_streak": 28,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -28,7 +28,8 @@
     "2026-09-27",
     "2026-09-28",
     "2026-09-29",
-    "2026-09-30"
+    "2026-09-30",
+    "2026-10-01"
   ],
   "history": [
     {
@@ -220,6 +221,13 @@
       "slug": "paths-to-reach-origin3850",
       "difficulty": "Medium",
       "time": "2026-09-29 19:26:57"
+    },
+    {
+      "date": "2026-10-01",
+      "problem_name": "Minimum Time to Finish Project",
+      "slug": "project-manager--141631",
+      "difficulty": "Medium",
+      "time": "2026-09-30 19:21:37"
     }
   ]
 }

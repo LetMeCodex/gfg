@@ -1,6 +1,6 @@
 {
-  "total_solved": 28,
-  "current_streak": 28,
+  "total_solved": 29,
+  "current_streak": 29,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -29,7 +29,8 @@
     "2026-09-28",
     "2026-09-29",
     "2026-09-30",
-    "2026-10-01"
+    "2026-10-01",
+    "2026-10-02"
   ],
   "history": [
     {
@@ -228,6 +229,13 @@
       "slug": "project-manager--141631",
       "difficulty": "Medium",
       "time": "2026-09-30 19:21:37"
+    },
+    {
+      "date": "2026-10-02",
+      "problem_name": "Lexicographically Smallest Rotation",
+      "slug": "lexicographically-smallest-string--151951",
+      "difficulty": "Hard",
+      "time": "2026-10-01 19:34:01"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "total_solved": 30,
-  "current_streak": 30,
+  "total_solved": 31,
+  "current_streak": 31,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -31,7 +31,8 @@
     "2026-09-30",
     "2026-10-01",
     "2026-10-02",
-    "2026-10-03"
+    "2026-10-03",
+    "2026-10-04"
   ],
   "history": [
     {
@@ -244,6 +245,13 @@
       "slug": "form-coils-in-a-matrix4726",
       "difficulty": "Medium",
       "time": "2026-10-02 19:21:10"
+    },
+    {
+      "date": "2026-10-04",
+      "problem_name": "Perimeter of Shapes in Binary Matrix",
+      "slug": "find-perimeter-of-shapes",
+      "difficulty": "Easy",
+      "time": "2026-10-04 13:30:30"
     }
   ]
 }

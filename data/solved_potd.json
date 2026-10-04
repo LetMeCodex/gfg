@@ -1,6 +1,6 @@
 {
-  "total_solved": 31,
-  "current_streak": 31,
+  "total_solved": 32,
+  "current_streak": 32,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -32,7 +32,8 @@
     "2026-10-01",
     "2026-10-02",
     "2026-10-03",
-    "2026-10-04"
+    "2026-10-04",
+    "2026-10-05"
   ],
   "history": [
     {
@@ -252,6 +253,13 @@
       "slug": "find-perimeter-of-shapes",
       "difficulty": "Easy",
       "time": "2026-10-04 13:30:30"
+    },
+    {
+      "date": "2026-10-05",
+      "problem_name": "Your Social Network",
+      "slug": "your-social-network0328",
+      "difficulty": "Medium",
+      "time": "2026-10-04 20:30:05"
     }
   ]
 }

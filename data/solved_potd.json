@@ -1,6 +1,6 @@
 {
-  "total_solved": 33,
-  "current_streak": 33,
+  "total_solved": 34,
+  "current_streak": 34,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -34,7 +34,8 @@
     "2026-10-03",
     "2026-10-04",
     "2026-10-05",
-    "2026-10-06"
+    "2026-10-06",
+    "2026-10-07"
   ],
   "history": [
     {
@@ -268,6 +269,13 @@
       "slug": "longest-increasing-path-in-a-matrix",
       "difficulty": "Hard",
       "time": "2026-10-05 23:24:19"
+    },
+    {
+      "date": "2026-10-07",
+      "problem_name": "Max Path Sum Between Two Leaves",
+      "slug": "maximum-path-sum",
+      "difficulty": "Hard",
+      "time": "2026-10-06 19:33:22"
     }
   ]
 }

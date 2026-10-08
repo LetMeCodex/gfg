@@ -1,6 +1,6 @@
 {
-  "total_solved": 35,
-  "current_streak": 35,
+  "total_solved": 36,
+  "current_streak": 36,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -36,7 +36,8 @@
     "2026-10-05",
     "2026-10-06",
     "2026-10-07",
-    "2026-10-08"
+    "2026-10-08",
+    "2026-10-09"
   ],
   "history": [
     {
@@ -284,6 +285,13 @@
       "slug": "maximum-frequency-1662528911",
       "difficulty": "Medium",
       "time": "2026-10-07 20:00:12"
+    },
+    {
+      "date": "2026-10-09",
+      "problem_name": "Minimum Operations to Reach n",
+      "slug": "find-optimum-operation4504",
+      "difficulty": "Easy",
+      "time": "2026-10-08 22:31:20"
     }
   ]
 }

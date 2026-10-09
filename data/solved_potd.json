@@ -1,6 +1,6 @@
 {
-  "total_solved": 36,
-  "current_streak": 36,
+  "total_solved": 37,
+  "current_streak": 37,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -37,7 +37,8 @@
     "2026-10-06",
     "2026-10-07",
     "2026-10-08",
-    "2026-10-09"
+    "2026-10-09",
+    "2026-10-10"
   ],
   "history": [
     {
@@ -292,6 +293,13 @@
       "slug": "find-optimum-operation4504",
       "difficulty": "Easy",
       "time": "2026-10-08 22:31:20"
+    },
+    {
+      "date": "2026-10-10",
+      "problem_name": "Balancing with Distinct Powers",
+      "slug": "balancing-pan5038",
+      "difficulty": "Easy",
+      "time": "2026-10-09 19:33:55"
     }
   ]
 }

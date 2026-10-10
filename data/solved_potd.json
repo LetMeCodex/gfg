@@ -1,6 +1,6 @@
 {
-  "total_solved": 37,
-  "current_streak": 37,
+  "total_solved": 38,
+  "current_streak": 38,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -38,7 +38,8 @@
     "2026-10-07",
     "2026-10-08",
     "2026-10-09",
-    "2026-10-10"
+    "2026-10-10",
+    "2026-10-11"
   ],
   "history": [
     {
@@ -300,6 +301,13 @@
       "slug": "balancing-pan5038",
       "difficulty": "Easy",
       "time": "2026-10-09 19:33:55"
+    },
+    {
+      "date": "2026-10-11",
+      "problem_name": "Sort Two Parts  Sorted",
+      "slug": "sort-the-half-sorted2157",
+      "difficulty": "Easy",
+      "time": "2026-10-10 20:43:55"
     }
   ]
 }

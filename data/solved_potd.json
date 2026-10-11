@@ -1,6 +1,6 @@
 {
-  "total_solved": 38,
-  "current_streak": 38,
+  "total_solved": 39,
+  "current_streak": 39,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -39,7 +39,8 @@
     "2026-10-08",
     "2026-10-09",
     "2026-10-10",
-    "2026-10-11"
+    "2026-10-11",
+    "2026-10-12"
   ],
   "history": [
     {
@@ -308,6 +309,13 @@
       "slug": "sort-the-half-sorted2157",
       "difficulty": "Easy",
       "time": "2026-10-10 20:43:55"
+    },
+    {
+      "date": "2026-10-12",
+      "problem_name": "Minimum Squares with Full Cuts",
+      "slug": "squares-in-reactangle3340",
+      "difficulty": "Medium",
+      "time": "2026-10-11 21:05:28"
     }
   ]
 }

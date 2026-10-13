@@ -1,6 +1,6 @@
 {
-  "total_solved": 40,
-  "current_streak": 40,
+  "total_solved": 41,
+  "current_streak": 41,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -41,7 +41,8 @@
     "2026-10-10",
     "2026-10-11",
     "2026-10-12",
-    "2026-10-13"
+    "2026-10-13",
+    "2026-10-14"
   ],
   "history": [
     {
@@ -324,6 +325,13 @@
       "slug": "adding-ones3628",
       "difficulty": "Easy",
       "time": "2026-10-12 22:10:51"
+    },
+    {
+      "date": "2026-10-14",
+      "problem_name": "Roll Characters of String",
+      "slug": "roll-the-characters-of-a-string2127",
+      "difficulty": "Medium",
+      "time": "2026-10-13 20:16:30"
     }
   ]
 }

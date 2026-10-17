@@ -1,6 +1,6 @@
 {
-  "total_solved": 43,
-  "current_streak": 43,
+  "total_solved": 44,
+  "current_streak": 44,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -44,7 +44,8 @@
     "2026-10-13",
     "2026-10-14",
     "2026-10-15",
-    "2026-10-16"
+    "2026-10-16",
+    "2026-10-17"
   ],
   "history": [
     {
@@ -348,6 +349,13 @@
       "slug": "count-always-found",
       "difficulty": "Medium",
       "time": "2026-10-15 20:34:54"
+    },
+    {
+      "date": "2026-10-17",
+      "problem_name": "Convert One String to Another with Constraints",
+      "slug": "check-if-it-is-possible-to-convert-one-string-into-another-with-given-constraints4116",
+      "difficulty": "Easy",
+      "time": "2026-10-17 04:50:44"
     }
   ]
 }

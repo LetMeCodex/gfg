@@ -1,6 +1,6 @@
 {
-  "total_solved": 44,
-  "current_streak": 44,
+  "total_solved": 45,
+  "current_streak": 45,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -45,7 +45,8 @@
     "2026-10-14",
     "2026-10-15",
     "2026-10-16",
-    "2026-10-17"
+    "2026-10-17",
+    "2026-10-18"
   ],
   "history": [
     {
@@ -356,6 +357,13 @@
       "slug": "check-if-it-is-possible-to-convert-one-string-into-another-with-given-constraints4116",
       "difficulty": "Easy",
       "time": "2026-10-17 04:50:44"
+    },
+    {
+      "date": "2026-10-18",
+      "problem_name": "Shortest Path From 1 To n",
+      "slug": "shortest-path-from-1-to-n0156",
+      "difficulty": "Easy",
+      "time": "2026-10-18 04:57:22"
     }
   ]
 }

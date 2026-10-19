@@ -1,6 +1,6 @@
 {
-  "total_solved": 46,
-  "current_streak": 46,
+  "total_solved": 47,
+  "current_streak": 47,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -47,7 +47,8 @@
     "2026-10-16",
     "2026-10-17",
     "2026-10-18",
-    "2026-10-19"
+    "2026-10-19",
+    "2026-10-20"
   ],
   "history": [
     {
@@ -372,6 +373,13 @@
       "slug": "good-stones--170647",
       "difficulty": "Medium",
       "time": "2026-10-19 15:01:03"
+    },
+    {
+      "date": "2026-10-20",
+      "problem_name": "Largest with Same Parity Adjacent Swaps",
+      "slug": "even-swap",
+      "difficulty": "Medium",
+      "time": "2026-10-19 21:46:29"
     }
   ]
 }

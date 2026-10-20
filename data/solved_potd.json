@@ -1,6 +1,6 @@
 {
-  "total_solved": 47,
-  "current_streak": 47,
+  "total_solved": 48,
+  "current_streak": 48,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -48,7 +48,8 @@
     "2026-10-17",
     "2026-10-18",
     "2026-10-19",
-    "2026-10-20"
+    "2026-10-20",
+    "2026-10-21"
   ],
   "history": [
     {
@@ -380,6 +381,13 @@
       "slug": "even-swap",
       "difficulty": "Medium",
       "time": "2026-10-19 21:46:29"
+    },
+    {
+      "date": "2026-10-21",
+      "problem_name": "Minimum Sum Subarray",
+      "slug": "smallest-sum-contiguous-subarray",
+      "difficulty": "Medium",
+      "time": "2026-10-20 20:55:28"
     }
   ]
 }

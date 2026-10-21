@@ -1,6 +1,6 @@
 {
-  "total_solved": 48,
-  "current_streak": 48,
+  "total_solved": 49,
+  "current_streak": 49,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -49,7 +49,8 @@
     "2026-10-18",
     "2026-10-19",
     "2026-10-20",
-    "2026-10-21"
+    "2026-10-21",
+    "2026-10-22"
   ],
   "history": [
     {
@@ -388,6 +389,13 @@
       "slug": "smallest-sum-contiguous-subarray",
       "difficulty": "Medium",
       "time": "2026-10-20 20:55:28"
+    },
+    {
+      "date": "2026-10-22",
+      "problem_name": "Palindrome with Replacement",
+      "slug": "palindrome-with-minimum-sum--170648",
+      "difficulty": "Medium",
+      "time": "2026-10-21 18:43:50"
     }
   ]
 }

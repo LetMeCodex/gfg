@@ -1,6 +1,6 @@
 {
-  "total_solved": 49,
-  "current_streak": 49,
+  "total_solved": 50,
+  "current_streak": 50,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -50,7 +50,8 @@
     "2026-10-19",
     "2026-10-20",
     "2026-10-21",
-    "2026-10-22"
+    "2026-10-22",
+    "2026-10-23"
   ],
   "history": [
     {
@@ -396,6 +397,13 @@
       "slug": "palindrome-with-minimum-sum--170648",
       "difficulty": "Medium",
       "time": "2026-10-21 18:43:50"
+    },
+    {
+      "date": "2026-10-23",
+      "problem_name": "Count Pairs Violating  BST Property",
+      "slug": "pairs-violating-bst-property--212515",
+      "difficulty": "Medium",
+      "time": "2026-10-22 20:54:16"
     }
   ]
 }

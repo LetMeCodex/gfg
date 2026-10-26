@@ -1,6 +1,6 @@
 {
-  "total_solved": 52,
-  "current_streak": 52,
+  "total_solved": 53,
+  "current_streak": 53,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -53,7 +53,8 @@
     "2026-10-22",
     "2026-10-23",
     "2026-10-24",
-    "2026-10-25"
+    "2026-10-25",
+    "2026-10-26"
   ],
   "history": [
     {
@@ -420,6 +421,13 @@
       "slug": "sum-of-beauty-of-all-substrings-1662962118",
       "difficulty": "Easy",
       "time": "2026-10-24 19:51:00"
+    },
+    {
+      "date": "2026-10-26",
+      "problem_name": "Minimize Max Min Diff with Subarray Removal",
+      "slug": "minimize-the-difference",
+      "difficulty": "Medium",
+      "time": "2026-10-26 05:10:35"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
-  "total_solved": 54,
-  "current_streak": 54,
+  "total_solved": 55,
+  "current_streak": 55,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -55,7 +55,8 @@
     "2026-10-24",
     "2026-10-25",
     "2026-10-26",
-    "2026-10-27"
+    "2026-10-27",
+    "2026-10-28"
   ],
   "history": [
     {
@@ -436,6 +437,13 @@
       "slug": "maximum-weight-transformation-of-a-given-string3551",
       "difficulty": "Medium",
       "time": "2026-10-26 19:58:53"
+    },
+    {
+      "date": "2026-10-28",
+      "problem_name": "Nth in Concatenated Decimal String",
+      "slug": "nth-character-in-concatenated-decimal-string0245",
+      "difficulty": "Medium",
+      "time": "2026-10-27 19:27:32"
     }
   ]
 }

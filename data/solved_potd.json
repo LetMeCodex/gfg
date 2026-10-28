@@ -1,6 +1,6 @@
 {
-  "total_solved": 55,
-  "current_streak": 55,
+  "total_solved": 56,
+  "current_streak": 56,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -56,7 +56,8 @@
     "2026-10-25",
     "2026-10-26",
     "2026-10-27",
-    "2026-10-28"
+    "2026-10-28",
+    "2026-10-29"
   ],
   "history": [
     {
@@ -444,6 +445,13 @@
       "slug": "nth-character-in-concatenated-decimal-string0245",
       "difficulty": "Medium",
       "time": "2026-10-27 19:27:32"
+    },
+    {
+      "date": "2026-10-29",
+      "problem_name": "Optimal File Merge",
+      "slug": "optimal-file-merge",
+      "difficulty": "Medium",
+      "time": "2026-10-28 19:35:18"
     }
   ]
 }

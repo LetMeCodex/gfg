@@ -1,6 +1,6 @@
 {
-  "total_solved": 58,
-  "current_streak": 58,
+  "total_solved": 59,
+  "current_streak": 59,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -59,7 +59,8 @@
     "2026-10-28",
     "2026-10-29",
     "2026-10-30",
-    "2026-10-31"
+    "2026-10-31",
+    "2026-11-01"
   ],
   "history": [
     {
@@ -468,6 +469,13 @@
       "slug": "bird-and-maximum-fruit-gathering0509",
       "difficulty": "Easy",
       "time": "2026-10-30 19:24:07"
+    },
+    {
+      "date": "2026-11-01",
+      "problem_name": "Maximum Subarray Sum with One Square Allowed",
+      "slug": "maximum-sum-subarray--143510",
+      "difficulty": "Medium",
+      "time": "2026-10-31 18:35:31"
     }
   ]
 }

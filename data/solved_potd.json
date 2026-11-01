@@ -1,6 +1,6 @@
 {
-  "total_solved": 59,
-  "current_streak": 59,
+  "total_solved": 60,
+  "current_streak": 60,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -60,7 +60,8 @@
     "2026-10-29",
     "2026-10-30",
     "2026-10-31",
-    "2026-11-01"
+    "2026-11-01",
+    "2026-11-02"
   ],
   "history": [
     {
@@ -476,6 +477,13 @@
       "slug": "maximum-sum-subarray--143510",
       "difficulty": "Medium",
       "time": "2026-10-31 18:35:31"
+    },
+    {
+      "date": "2026-11-02",
+      "problem_name": "Largest Sum Cycle",
+      "slug": "largest-sum-cycle--170645",
+      "difficulty": "Hard",
+      "time": "2026-11-01 18:57:50"
     }
   ]
 }

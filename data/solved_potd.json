@@ -1,6 +1,6 @@
 {
-  "total_solved": 62,
-  "current_streak": 62,
+  "total_solved": 63,
+  "current_streak": 63,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -63,7 +63,8 @@
     "2026-11-01",
     "2026-11-02",
     "2026-11-03",
-    "2026-11-04"
+    "2026-11-04",
+    "2026-11-05"
   ],
   "history": [
     {
@@ -500,6 +501,13 @@
       "slug": "game-of-xor1541",
       "difficulty": "Medium",
       "time": "2026-11-03 20:32:30"
+    },
+    {
+      "date": "2026-11-05",
+      "problem_name": "Minimum Days",
+      "slug": "minimum-days--170646",
+      "difficulty": "Medium",
+      "time": "2026-11-04 22:55:56"
     }
   ]
 }

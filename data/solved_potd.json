@@ -1,6 +1,6 @@
 {
-  "total_solved": 67,
-  "current_streak": 67,
+  "total_solved": 68,
+  "current_streak": 68,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -68,7 +68,8 @@
     "2026-11-06",
     "2026-11-07",
     "2026-11-08",
-    "2026-11-09"
+    "2026-11-09",
+    "2026-11-10"
   ],
   "history": [
     {
@@ -540,6 +541,13 @@
       "slug": "count-the-characters1821",
       "difficulty": "Easy",
       "time": "2026-11-08 18:51:12"
+    },
+    {
+      "date": "2026-11-10",
+      "problem_name": "At Least K Occurrences",
+      "slug": "first-element-to-occur-k-times5150",
+      "difficulty": "Easy",
+      "time": "2026-11-09 23:27:49"
     }
   ]
 }

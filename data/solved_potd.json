@@ -1,6 +1,6 @@
 {
-  "total_solved": 70,
-  "current_streak": 70,
+  "total_solved": 71,
+  "current_streak": 71,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -71,7 +71,8 @@
     "2026-11-09",
     "2026-11-10",
     "2026-11-11",
-    "2026-11-12"
+    "2026-11-12",
+    "2026-11-13"
   ],
   "history": [
     {
@@ -564,6 +565,13 @@
       "slug": "find-the-closest-element-in-bst",
       "difficulty": "Medium",
       "time": "2026-11-11 21:27:26"
+    },
+    {
+      "date": "2026-11-13",
+      "problem_name": "Common Nodes in Two BSTs",
+      "slug": "print-common-nodes-in-bst",
+      "difficulty": "Medium",
+      "time": "2026-11-12 21:30:07"
     }
   ]
 }

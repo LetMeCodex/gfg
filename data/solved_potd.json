@@ -1,6 +1,6 @@
 {
-  "total_solved": 71,
-  "current_streak": 71,
+  "total_solved": 72,
+  "current_streak": 72,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -72,7 +72,8 @@
     "2026-11-10",
     "2026-11-11",
     "2026-11-12",
-    "2026-11-13"
+    "2026-11-13",
+    "2026-11-14"
   ],
   "history": [
     {
@@ -572,6 +573,13 @@
       "slug": "print-common-nodes-in-bst",
       "difficulty": "Medium",
       "time": "2026-11-12 21:30:07"
+    },
+    {
+      "date": "2026-11-14",
+      "problem_name": "Max Equal Sum in 3 Stacks",
+      "slug": "find-maximum-equal-sum-of-three-stacks",
+      "difficulty": "Medium",
+      "time": "2026-11-13 20:54:52"
     }
   ]
 }

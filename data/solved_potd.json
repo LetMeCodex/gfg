@@ -1,6 +1,6 @@
 {
-  "total_solved": 75,
-  "current_streak": 75,
+  "total_solved": 76,
+  "current_streak": 76,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -76,7 +76,8 @@
     "2026-11-14",
     "2026-11-15",
     "2026-11-16",
-    "2026-11-17"
+    "2026-11-17",
+    "2026-11-18"
   ],
   "history": [
     {
@@ -604,6 +605,13 @@
       "slug": "the-pattern-matcher",
       "difficulty": "Easy",
       "time": "2026-11-16 23:24:13"
+    },
+    {
+      "date": "2026-11-18",
+      "problem_name": "XOR of Number Range",
+      "slug": "find-xor-of-numbers-from-l-to-r",
+      "difficulty": "Easy",
+      "time": "2026-11-17 22:25:04"
     }
   ]
 }

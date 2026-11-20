@@ -1,6 +1,6 @@
 {
-  "total_solved": 78,
-  "current_streak": 78,
+  "total_solved": 79,
+  "current_streak": 79,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -79,7 +79,8 @@
     "2026-11-17",
     "2026-11-18",
     "2026-11-19",
-    "2026-11-20"
+    "2026-11-20",
+    "2026-11-21"
   ],
   "history": [
     {
@@ -628,6 +629,13 @@
       "slug": "min-number-of-flips3210",
       "difficulty": "Easy",
       "time": "2026-11-19 22:09:53"
+    },
+    {
+      "date": "2026-11-21",
+      "problem_name": "Smallest Subarray Sum Greater Than x",
+      "slug": "smallest-subarray-with-sum-greater-than-x5651",
+      "difficulty": "Easy",
+      "time": "2026-11-20 21:50:16"
     }
   ]
 }

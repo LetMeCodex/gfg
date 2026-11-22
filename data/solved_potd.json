@@ -1,6 +1,6 @@
 {
-  "total_solved": 80,
-  "current_streak": 80,
+  "total_solved": 81,
+  "current_streak": 81,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -81,7 +81,8 @@
     "2026-11-19",
     "2026-11-20",
     "2026-11-21",
-    "2026-11-22"
+    "2026-11-22",
+    "2026-11-23"
   ],
   "history": [
     {
@@ -644,6 +645,13 @@
       "slug": "longest-subarray-with-sum-divisible-by-k1259",
       "difficulty": "Medium",
       "time": "2026-11-21 20:34:07"
+    },
+    {
+      "date": "2026-11-23",
+      "problem_name": "Character at Position in Infinite String",
+      "slug": "the-infinite-string1049",
+      "difficulty": "Medium",
+      "time": "2026-11-22 20:45:25"
     }
   ]
 }

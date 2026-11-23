@@ -1,6 +1,6 @@
 {
-  "total_solved": 81,
-  "current_streak": 81,
+  "total_solved": 82,
+  "current_streak": 82,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -82,7 +82,8 @@
     "2026-11-20",
     "2026-11-21",
     "2026-11-22",
-    "2026-11-23"
+    "2026-11-23",
+    "2026-11-24"
   ],
   "history": [
     {
@@ -652,6 +653,13 @@
       "slug": "the-infinite-string1049",
       "difficulty": "Medium",
       "time": "2026-11-22 20:45:25"
+    },
+    {
+      "date": "2026-11-24",
+      "problem_name": "Two Pairs with Same Sum",
+      "slug": "satisfy-the-equation5847",
+      "difficulty": "Medium",
+      "time": "2026-11-23 19:31:43"
     }
   ]
 }

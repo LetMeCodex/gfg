@@ -1,6 +1,6 @@
 {
-  "total_solved": 82,
-  "current_streak": 82,
+  "total_solved": 83,
+  "current_streak": 83,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -83,7 +83,8 @@
     "2026-11-21",
     "2026-11-22",
     "2026-11-23",
-    "2026-11-24"
+    "2026-11-24",
+    "2026-11-25"
   ],
   "history": [
     {
@@ -660,6 +661,13 @@
       "slug": "satisfy-the-equation5847",
       "difficulty": "Medium",
       "time": "2026-11-23 19:31:43"
+    },
+    {
+      "date": "2026-11-25",
+      "problem_name": "Geek's Destination with Special Jump",
+      "slug": "geek-and-her-destination--145724",
+      "difficulty": "Hard",
+      "time": "2026-11-24 23:32:39"
     }
   ]
 }

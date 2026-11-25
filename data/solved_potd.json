@@ -1,6 +1,6 @@
 {
-  "total_solved": 83,
-  "current_streak": 83,
+  "total_solved": 84,
+  "current_streak": 84,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -84,7 +84,8 @@
     "2026-11-22",
     "2026-11-23",
     "2026-11-24",
-    "2026-11-25"
+    "2026-11-25",
+    "2026-11-26"
   ],
   "history": [
     {
@@ -668,6 +669,13 @@
       "slug": "geek-and-her-destination--145724",
       "difficulty": "Hard",
       "time": "2026-11-24 23:32:39"
+    },
+    {
+      "date": "2026-11-26",
+      "problem_name": "Range Vowel Count Queries",
+      "slug": "range-vowel-count-queries-static",
+      "difficulty": "Medium",
+      "time": "2026-11-25 23:06:55"
     }
   ]
 }

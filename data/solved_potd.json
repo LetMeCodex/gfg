@@ -1,6 +1,6 @@
 {
-  "total_solved": 84,
-  "current_streak": 84,
+  "total_solved": 85,
+  "current_streak": 85,
   "solved_dates": [
     "2026-09-04",
     "2026-09-05",
@@ -85,7 +85,8 @@
     "2026-11-23",
     "2026-11-24",
     "2026-11-25",
-    "2026-11-26"
+    "2026-11-26",
+    "2026-11-27"
   ],
   "history": [
     {
@@ -676,6 +677,13 @@
       "slug": "range-vowel-count-queries-static",
       "difficulty": "Medium",
       "time": "2026-11-25 23:06:55"
+    },
+    {
+      "date": "2026-11-27",
+      "problem_name": "Count Edges in Graph",
+      "slug": "count-number-of-edges-in-an-undirected-graph",
+      "difficulty": "Easy",
+      "time": "2026-11-26 22:59:36"
     }
   ]
 }
